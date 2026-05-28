@@ -1,47 +1,98 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { Employee } from '../classes/employee'
 
 const users = ref([
-  {
-    firstName: 'Sam',
-    surname: 'Clayton',
-    dob: '13/09/1992',
-    startDate: '18/05/2026',
-    role: 'Associate Software Engineer',
-    salary: '1.50',
-  },
-  {
-    firstName: 'Jake',
-    surname: 'Roberts',
-    dob: 'TBC',
-    startDate: '18/05/2026',
-    role: 'Associate Software Engineer',
-    salary: '3.50',
-  },
-  {
-    firstName: 'Ciaran',
-    surname: 'Dennison',
-    dob: 'TBC',
-    startDate: '18/05/2026',
-    role: 'Associate Software Engineer',
-    salary: '5.50',
-  },
-  {
-    firstName: 'Kelsey',
-    surname: 'Callington',
-    dob: 'TBC',
-    startDate: '18/05/2026',
-    role: 'Associate Software Engineer',
-    salary: '6',
-  },
-  {
-    firstName: 'Magdalena',
-    surname: 'Janeckova',
-    dob: 'TBC',
-    startDate: '18/05/2026',
-    role: 'Associate Software Engineer',
-    salary: '10',
-  },
+  new Employee(
+    'Sam',
+    'Clayton',
+    'sclayton',
+    'sam@aud.com',
+    '13/09/1992',
+    'blue',
+    '99',
+    'Avenue',
+    'Street',
+    'Withington',
+    'Manchester',
+    'M20',
+    '07800900200',
+    '18/05/2026',
+    'Associate Software Engineer',
+    5,
+  ),
+  new Employee(
+    'Jake',
+    'Roberts',
+    'jroberts',
+    'jake@aud.com',
+    'TBC',
+    'green',
+    '100',
+    'Avenue',
+    'Street',
+    'Leeds',
+    'Leeds',
+    'LS1',
+    '07800900201',
+    '18/05/2026',
+    'Associate Software Engineer',
+    7,
+  ),
+  new Employee(
+    'Ciaran',
+    'Dennison',
+    'cdennison',
+    'ciaran@aud.com',
+    'TBC',
+    'green',
+    '101',
+    'Avenue',
+    'Street',
+    'Leeds',
+    'Leeds',
+    'LS1',
+    '07800900202',
+    '18/05/2026',
+    'Associate Software Engineer',
+    10,
+  ),
+  new Employee(
+    'Kelsey',
+    'Callington',
+    'kcallington',
+    'kelsey@aud.com',
+    'TBC',
+    'green',
+    '102',
+    'Avenue',
+    'Street',
+    'Leeds',
+    'Leeds',
+    'LS1',
+    '07800900203',
+    '18/05/2026',
+    'Associate Software Engineer',
+    15,
+  ),
+  new Employee(
+    'Magdalena',
+    'Janeckova',
+    'mjaneckova',
+    'magda@aud.com',
+    'TBC',
+    'green',
+    '103',
+    'Avenue',
+    'Street',
+    'Leeds',
+    'Leeds',
+    'LS1',
+    '07800900204',
+    '18/05/2026',
+    'Associate Software Engineer',
+    20,
+  ),
 ])
 
 function sumSalary() {
@@ -52,8 +103,6 @@ function sumSalary() {
   }
   return total
 }
-
-// let salarySum: number =
 </script>
 
 <template>
@@ -72,24 +121,12 @@ function sumSalary() {
       </thead>
       <tbody>
         <tr v-for="(user, index) in users" :key="index">
-          <td>
-            <input type="text" v-model="user.firstName" />
-          </td>
-          <td>
-            <input type="text" v-model="user.surname" />
-          </td>
-          <td>
-            <input type="text" v-model="user.dob" />
-          </td>
-          <td>
-            <input type="text" v-model="user.startDate" />
-          </td>
-          <td>
-            <input type="text" v-model="user.role" />
-          </td>
-          <td>
-            <input type="text" v-model="user.salary" />
-          </td>
+          <td>{{ user.firstName }}</td>
+          <td>{{ user.lastName }}</td>
+          <td>{{ user.dob }}</td>
+          <td>{{ user.startDate }}</td>
+          <td>{{ user.role }}</td>
+          <td>{{ user.salary }}</td>
         </tr>
       </tbody>
       <tfoot>
