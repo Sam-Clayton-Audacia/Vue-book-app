@@ -1,13 +1,27 @@
 <script setup lang="ts">
-import Userform from './components/userform.vue'
-import headerBanner from './components/headerBanner.vue'
-import EmployeeTable from './components/employeeTable.vue'
+import HeaderNavigation from './components/headerNavigation.vue'
+import Sidebar from './components/sidebar.vue'
 </script>
 
 <template>
-  <headerBanner />
-  <Userform />
-  <EmployeeTable />
+  <div class="my-app">
+    <HeaderNavigation />
+    <div class="content-container">
+      <router-view />
+    </div>
+  </div>
 </template>
 
-<style scoped></style>
+<style>
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(30, 57, 100);
+}
+.content-container {
+  display: flex;
+  flex-direction: row;
+}
+</style>
