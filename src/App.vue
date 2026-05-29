@@ -5,6 +5,9 @@ import Sidebar from './components/sidebar.vue'
 
 <template>
   <div class="app-layout">
+    <div class="logo">
+      <img src="./img/aud-logo.png" />
+    </div>
     <header class="header">
       <HeaderNavigation />
     </header>
@@ -23,7 +26,7 @@ body,
 #app {
   height: 100%;
   margin: 0;
-  background-color: rgb(30, 57, 100);
+  background-color: rgba(27, 70, 125);
 }
 .app-layout {
   height: 100vh;
@@ -33,6 +36,12 @@ body,
   grid-template-areas:
     'logo header'
     'sidebar main';
+}
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
 }
 
 .header {
@@ -49,7 +58,7 @@ body,
 
 .main-content {
   grid-area: main;
-  background: rgb(30, 57, 100);
+  background: rgba(27, 70, 125);
 
   overflow-y: auto;
 
