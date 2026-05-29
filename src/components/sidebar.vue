@@ -18,7 +18,6 @@
 
 <style>
 .sidebar {
-  min-height: 100%;
   width: 18rem;
   background-color: #f1f1f1;
 }

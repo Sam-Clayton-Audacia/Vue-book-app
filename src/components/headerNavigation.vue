@@ -4,7 +4,6 @@
   <nav>
     <div class="banner">
       <h1><RouterLink to="/home" class="nav-button">Academy</RouterLink></h1>
-      <div class="banner-subheading"><p class="tagline">Welcome to the Academy</p></div>
     </div>
 
     <ul class="navbar">
