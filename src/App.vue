@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HeaderNavigation from './components/headerNavigation.vue'
+import Modal from './components/modal.vue'
 import Sidebar from './components/sidebar.vue'
 </script>
 
@@ -9,6 +10,9 @@ import Sidebar from './components/sidebar.vue'
       <img src="./img/aud-logo.png" />
     </div>
     <header class="header">
+      <div class="modal-button">
+        <Modal />
+      </div>
       <HeaderNavigation />
     </header>
     <aside class="sidebar">
@@ -54,6 +58,10 @@ body .logo {
   object-fit: contain;
 }
 
+.modal-button {
+  display: flex;
+  justify-content: right;
+}
 .header {
   grid-area: header;
   background: rgba(13, 69, 125);
