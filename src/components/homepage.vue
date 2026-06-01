@@ -15,6 +15,7 @@ h2 {
 
 .image-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 </style>
