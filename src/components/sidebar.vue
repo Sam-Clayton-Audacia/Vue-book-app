@@ -12,6 +12,9 @@
       <li>
         <RouterLink to="/employee-info" class="nav-button">Employee Info</RouterLink>
       </li>
+      <li>
+        <RouterLink to="/chat" class="nav-button">Chat</RouterLink>
+      </li>
     </ul>
   </div>
 </template>

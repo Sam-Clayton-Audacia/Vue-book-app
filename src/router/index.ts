@@ -2,11 +2,13 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Userform from '../components/userform.vue'
 import EmployeeTable from '../components/employeeTable.vue'
 import Homepage from '../components/homepage.vue'
+import Chat from '../components/chat/chat-parent.vue'
 
 const routes = [
   { path: '/home', component: Homepage },
   { path: '/user-form-submission', component: Userform },
   { path: '/employee-info', component: EmployeeTable },
+  { path: '/chat', component: Chat },
 ]
 
 const router = createRouter({
