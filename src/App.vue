@@ -26,8 +26,12 @@ body,
 #app {
   height: 100%;
   margin: 0;
-  background-color: rgba(27, 70, 125);
 }
+
+body .logo {
+  background-color: rgba(13, 69, 125);
+}
+
 .app-layout {
   height: 100vh;
   display: grid;
@@ -42,29 +46,34 @@ body,
   grid-area: logo;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+}
+
+.logo img {
+  max-height: 143px;
+  object-fit: contain;
 }
 
 .header {
   grid-area: header;
-  background: rgb(26, 40, 65);
-  border-bottom: 1px solid white;
+  background: rgba(13, 69, 125);
 }
 
 .sidebar {
   grid-area: sidebar;
-  background: white;
+  background: rgba(13, 69, 125);
   overflow-y: auto;
 }
 
 .main-content {
   grid-area: main;
-  background: rgba(27, 70, 125);
+  background: rgb(23, 60, 107);
 
   overflow-y: auto;
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   padding: 2rem;
 }

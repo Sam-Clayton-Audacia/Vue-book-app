@@ -20,13 +20,9 @@
 <style scoped>
 .banner {
   width: 100%;
-  background-color: rgb(26, 40, 65);
-  text-align: center;
-  padding: 10px 0;
-}
-.banner-subheading {
   text-align: center;
 }
+
 h1 .nav-button,
 p {
   text-decoration: none;
@@ -57,9 +53,6 @@ ul {
   padding: 0;
   display: flex;
   justify-content: center;
-  background-color: rgb(26, 40, 65);
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
 }
 
 .navbar {

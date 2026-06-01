@@ -16,9 +16,46 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .sidebar {
   width: 18rem;
-  background-color: #f1f1f1;
+}
+
+.nav-button,
+p {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+ul li {
+  margin: 0;
+}
+
+ul li .nav-button {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  display: block;
+  color: white;
+  float: left;
+  padding: 10px 12px;
+  border: 2px solid transparent;
+}
+
+ul li .nav-button:hover {
+  background-color: rgb(21, 42, 78);
+  border: 1px solid white;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
 }
 </style>
