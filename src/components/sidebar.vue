@@ -20,16 +20,13 @@
 </template>
 
 <style scoped>
-.sidebar {
-  width: 18rem;
-}
-
 .nav-button,
 p {
   text-decoration: none;
   text-align: center;
   color: white;
 }
+
 ul li {
   margin: 0;
 }

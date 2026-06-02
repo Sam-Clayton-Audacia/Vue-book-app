@@ -315,11 +315,11 @@ td {
 table {
   margin: 0 auto;
   padding: 10px;
-  background-color: rgb(26, 40, 65);
+  background-color: rgb(221, 233, 255);
   border: 2px solid;
   border-radius: 15px;
   display: table;
-  color: white;
+  color: rgb(0, 27, 58);
 }
 #totalSalary {
   text-align: right;
