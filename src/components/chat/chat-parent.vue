@@ -21,5 +21,10 @@ const handleMessage = (message: string) => {
 .chat-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  min-width: 600px;
+  min-height: 600px;
+  background-color: rgb(21, 42, 78);
+  border: 2px solid white;
 }
 </style>

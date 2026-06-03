@@ -28,4 +28,14 @@ const handleSendMessage = () => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.chat-input {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.chat-input input {
+  flex: 1;
+}
+</style>

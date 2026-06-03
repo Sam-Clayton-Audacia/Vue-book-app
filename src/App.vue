@@ -81,7 +81,7 @@ body .logo {
 
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
   padding: 2rem;
 }
